@@ -1,10 +1,30 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>crypto-app</title>
+    <title>Paimon-Wiki</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              hoyoblue: {
+                900: '#141721',
+                850: '#191e2b',
+                800: '#212735',
+                750: '#262d3d',
+                700: '#2e3748',
+                muted: '#717e99',
+              },
+              hoyogold: '#e5a93c',
+              hoyocyan: '#1cd1e1',
+            }
+          }
+        }
+      }
+    </script>
   </head>
   <body>
     <div id="root"></div>

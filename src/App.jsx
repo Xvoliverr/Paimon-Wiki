@@ -8,7 +8,7 @@ import NotFoundPage from "./pages/not-found"
 import CharacterDetailsPage from "./pages/detalles"
 import WeaponsPage from "./pages/weapons"
 import WeaponDetailsPage from "./pages/weapon-details"
-
+import CharactersPage from "./pages/characters"
 import Header from "./components/Header"
 
 const App = () => {
@@ -52,8 +52,18 @@ const App = () => {
                 <Route path='/weapons' element={<WeaponsPage />} />
                 <Route path='/weapon/:id' element={<WeaponDetailsPage />} />
                 <Route path='/about' element={<AboutPage />} />
+                <Route path='/characters' element={ <CharactersPage
+                        characters={characters}
+                        filter={filter}
+                        setFilter={setFilter}
+                        limit={limit}
+                        setLimit={setLimit}
+                        loading={loading}
+                        error={error} />
+                } />
                 <Route path="/character/:id" element={<CharacterDetailsPage />} />
                 <Route path='*' element={<NotFoundPage />} />
+                <Route path='/' element={<HomePage characters={characters} />} />
             </Routes>
         </>
     )

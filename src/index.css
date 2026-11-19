@@ -328,3 +328,25 @@ a {
   text-align: center;
   margin-bottom: 1.5rem;
 }
+
+/* Divisor ornamental estilo HoYoWiki */
+.ornate-line {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin: 14px 0 20px 0;
+}
+.ornate-line::before,
+.ornate-line::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(90deg, rgba(74, 85, 104, 0.4), rgba(74, 85, 104, 0.15));
+}
+.ornate-diamond {
+  width: 6px;
+  height: 6px;
+  background-color: #4b586f;
+  transform: rotate(45deg);
+  margin: 0 8px;
+}
